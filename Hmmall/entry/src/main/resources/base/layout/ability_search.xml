@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--设置整体布局为directionlayout，适应页面，采用通用背景-->
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical"
+    ohos:background_element="$graphic:background_common"
+    ohos:padding="5vp">
+
+    <DirectionalLayout
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:orientation="horizontal">
+        <!--搜索页的搜索框设计，默认显示为商品名称-->
+        <TextField
+            ohos:id="$+id:search_textfield"
+            ohos:height="35vp"
+            ohos:width="290vp"
+            ohos:hint="商品名称"
+            ohos:text_size="12fp"
+            ohos:top_padding="5vp"
+            ohos:left_padding="15vp"
+            ohos:text_alignment="vertical_center"
+            ohos:background_element="$graphic:background_search_input">
+        </TextField>
+        <!--搜索按钮设计-->
+        <Button
+            ohos:id="$+id:search_btn"
+            ohos:height="35vp"
+            ohos:width="57vp"
+            ohos:text="搜索"
+            ohos:padding="8vp"
+            ohos:text_size="15fp"
+            ohos:text_color="#ffffff"
+            ohos:background_element="$graphic:background_search_button"
+            ohos:text_alignment="vertical_center"
+            ohos:left_margin="3vp">
+        </Button>
+    </DirectionalLayout>
+    <!--添加滚动视图-->
+    <ScrollView
+        ohos:height="match_parent"
+        ohos:width="match_parent">
+        <!--用于显示搜索结果-->
+        <TableLayout
+            ohos:id="$+id:search_result_tablelayout"
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:column_count="2"
+            ohos:margin="5vp">
+        </TableLayout>
+    </ScrollView>
+
+</DirectionalLayout>

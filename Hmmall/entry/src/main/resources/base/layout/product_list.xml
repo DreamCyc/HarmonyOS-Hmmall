@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--设置整体布局为directionlayout，适应页面-->
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="220vp"
+    ohos:width="170vp"
+    ohos:orientation="vertical"
+    ohos:margin="2vp"
+    ohos:background_element="$graphic:background_index_image"><!--圆角5vp+白色背景-->
+    <!--显示商品的图片-->
+    <Image
+        ohos:id="$+id:product_image"
+        ohos:height="150vp"
+        ohos:width="170fp"
+        ohos:image_src="$media:index_icon_1"
+        ohos:clip_alignment="center"
+        ohos:scale_mode="center">
+    </Image>
+    <!--显示商品名称-->
+    <Text
+        ohos:id="$+id:product_name"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:padding="2vp"
+        ohos:text_size="10fp"
+        ohos:text_color="#000000"
+        ohos:text="商品名称">
+    </Text>
+
+    <!--显示商品价格-->
+    <Text
+        ohos:id="$+id:product_price"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:padding="2vp"
+        ohos:text_size="13fp"
+        ohos:text="￥ 13.33"
+        ohos:text_color="#ff383b">
+    </Text>
+</DirectionalLayout>

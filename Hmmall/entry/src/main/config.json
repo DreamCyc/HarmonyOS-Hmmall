@@ -1,0 +1,100 @@
+{
+  "app": {
+    "bundleName": "com.example.hmmall",
+    "vendor": "example",
+    "version": {
+      "code": 1000000,
+      "name": "1.0.0"
+    }
+  },
+
+  "deviceConfig": {},
+  "module": {
+    "package": "com.example.hmmall",
+    "name": ".MyApplication",
+    "mainAbility": "com.example.hmmall.MainAbility",
+    "deviceType": [
+      "phone"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry",
+      "installationFree": false
+    },
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ],
+        "orientation": "unspecified",
+        "name": "com.example.hmmall.MainAbility",
+        "icon": "$media:icon",
+        "description": "$string:mainability_description",
+        "label": "$string:entry_MainAbility",
+        "type": "page",
+        "launchType": "standard",
+        "formsEnabled": false
+      },
+      {
+        "permissions": [
+          "com.example.hmmall.DataAbilityShellProvider.PROVIDER"
+        ],
+        "name": "com.example.hmmall.HmmallDataAbility",
+        "icon": "$media:icon",
+        "description": "$string:hmmalldataability_description",
+        "type": "data",
+        "uri": "dataability://com.example.hmmall.HmmallDataAbility"
+      },
+      {
+        "permissions": [
+          "com.example.hmmall.DataAbilityShellProvider.PROVIDER"
+        ],
+        "name": "com.example.hmmall.ProductDataAbility",
+        "icon": "$media:icon",
+        "description": "$string:productdataability_description",
+        "type": "data",
+        "uri": "dataability://com.example.hmmall.ProductDataAbility"
+      },
+      {
+        "permissions": [
+          "com.example.hmmall.DataAbilityShellProvider.PROVIDER"
+        ],
+        "name": "com.example.hmmall.ShopCarDataAbility",
+        "icon": "$media:icon",
+        "description": "$string:shopcardataability_description",
+        "type": "data",
+        "uri": "dataability://com.example.hmmall.ShopCarDataAbility"
+      }
+
+    ],
+
+    "reqPermissions": [
+      {
+        "name": "ohos.permission.LOCATION",
+        "usedScene": {
+          "ability": [
+            "ohos.example.hmmall.MainAbility",
+            "ohos.example.hmmall.OrderAddAbilitySlice"
+          ],
+          "when": "always"
+        }
+      }
+    ],
+    "metaData": {
+      "customizeData": [
+        {
+          "name": "hwc-theme",
+          "value": "androidhwext:style/Theme.Emui.Light.NoTitleBar"
+        }
+      ]
+    }
+  }
+}

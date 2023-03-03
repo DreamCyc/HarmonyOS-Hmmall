@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--设置整体布局为directionlayout，适应页面-->
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical">
+    <!--对使用说明文本进行展示-->
+    <Text
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:top_margin="30vp"
+        ohos:multiple_lines="true"
+        ohos:text="功能说明:首页内容包括商品搜索、商品轮播图、功能图标、商品显示列表，点击商品搜索并输入商品名称可以跳转到商品详情页中，通过点击首页的商品区域也可以跳转到对应商品的详情页中，在商品详情页可以调整需要购买的商品数量，点击添加购物车按钮可以将其添加到购物车中；广场页包括本使用说明，点击页面的按钮可跳转到本使用说明;确认已经有商品在购物车后，在购物车界面，我们可以看到已经加入购物车的商品列表，点击后选择左侧的选择按钮，选择完商品之后，点击结算按钮，跳转到结算页，可以看到结算页显示的已选商品信息，结算结束之后返回;在个人主页，显示用户名信息，点击退出登录可以退出应用，操作结束。"
+        ohos:text_size="20vp"
+        ohos:text_color="#333333"
+        ohos:scrollable="true"
+        ohos:left_margin="10vp"
+        ohos:right_margin="10vp"
+        ohos:background_element="#34aaaa"
+        ohos:line_height_num="1.4"
+        ohos:text_alignment="center">
+    </Text>
+</DirectionalLayout>

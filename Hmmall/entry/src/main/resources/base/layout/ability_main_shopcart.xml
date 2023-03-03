@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--设置整体布局为directionlayout，适应页面，采用通用背景-->
+<DependentLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:background_element="$graphic:background_common"
+    ohos:padding="5vp">
+    <!--顶部显示页面的名称为我的购物车-->
+    <Text
+        ohos:id="$+id:shopcart_title_text"
+        ohos:align_parent_top="true"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:text="我的购物车"
+        ohos:text_size="15vp"
+        ohos:center_in_parent="true"
+        ohos:text_color="#bbbbbb"
+        ohos:layout_alignment="center">
+    </Text>
+    <!--与首页相同，设置滑动部分，并设置上下的id连接，上边是顶部文字显示，下部为去结算的按钮-->
+    <ScrollView
+        ohos:id="$+id:shopcart_list_scrollview"
+        ohos:above="$id:shopcart_add_button"
+        ohos:below="$id:shopcart_title_text"
+        ohos:height="match_parent"
+        ohos:width="match_parent">
+        <!--在scrollview内部设置列表，以一个tablelayout整体的方式进行设置，在功能代码中，将针对选择好的结果进行逐行添加-->
+        <TableLayout
+            ohos:id="$+id:shop_list_table"
+            ohos:height="match_content"
+            ohos:width="match_parent">
+        </TableLayout>
+    </ScrollView>
+    <!--去结算的按钮，手动设置样式-->
+    <Button
+        ohos:id="$+id:shopcart_add_button"
+        ohos:height="match_content"
+        ohos:width="180vp"
+        ohos:text="去结算"
+        ohos:text_color="#ffffff"
+        ohos:text_size="25vp"
+        ohos:padding="10vp"
+        ohos:center_in_parent="true"
+        ohos:background_element="#ff383b"
+        ohos:bottom_margin="85vp"
+        ohos:align_parent_bottom="true">
+    </Button>
+</DependentLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--设置整体布局为directionlayout，适应页面，采用通用背景-->
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical"
+    ohos:background_element="$graphic:background_common">
+    <!--设置文本显示为广场页-->
+    <Text
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:top_padding="5vp"
+        ohos:left_margin="10vp"
+        ohos:text="square"
+        ohos:text_size="30vp"
+        ohos:layout_alignment="center">
+    </Text>
+    <!--设置第一个按钮为功能说明，点击可跳转至说明页面中，采用特定的按钮样式布局-->
+    <Button
+        ohos:id="$+id:new_information"
+        ohos:height="match_content"
+        ohos:width="250vp"
+        ohos:left_margin="55vp"
+        ohos:bottom_margin="30vp"
+        ohos:text="使用说明"
+        ohos:padding="10vp"
+        ohos:text_size="30vp"
+        ohos:background_element="$graphic:capsule_button_element"
+        ohos:top_margin="20vp"
+        ohos:text_color="#444444">
+    </Button>
+    <!--设置第二个按钮为获取运气值，点击可跳转至运气值获取页面中，采用特定的按钮样式布局-->
+    <Button
+        ohos:id="$+id:discount"
+        ohos:height="match_content"
+        ohos:width="250vp"
+        ohos:left_margin="55vp"
+        ohos:text="获取运气值"
+        ohos:padding="10vp"
+        ohos:text_size="30vp"
+        ohos:background_element="$graphic:capsule_button_element"
+        ohos:top_margin="20vp"
+        ohos:text_color="#444444"
+        ohos:text_alignment="center">
+    </Button>
+</DirectionalLayout>

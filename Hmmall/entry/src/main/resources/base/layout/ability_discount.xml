@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--设置整体布局为directionlayout，适应页面，采用通用背景-->
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:alignment="center"
+    ohos:orientation="vertical">
+    <!--本次运气值的显示文本，作为提示操作-->
+    <Text
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:left_padding="20vp"
+        ohos:bottom_padding="20vp"
+        ohos:text="您本次的运气值为:"
+        ohos:text_color="#444444"
+        ohos:text_size="20vp">
+    </Text>
+    <!--本次运气值的文本框显示，默认显示为lucky，之后随功能操作会显示内容-->
+    <TextField
+        ohos:id="$+id:discount_get"
+        ohos:height="match_content"
+        ohos:width="200vp"
+        ohos:hint="lucky"
+        ohos:text_size="15fp"
+        ohos:bottom_padding="20vp"
+        ohos:left_padding="15vp"
+        ohos:text_color="#777777"
+        ohos:text_alignment="vertical_center"
+        ohos:margin="5vp"
+        ohos:padding="10vp"
+        ohos:background_element="$graphic:background_textfield">
+    </TextField>
+    <!--get lucky按钮，点击可调用函数生成随机值填在上边的框框中-->
+    <Button
+        ohos:id="$+id:discount"
+        ohos:height="50vp"
+        ohos:width="250vp"
+        ohos:text="get lucky"
+        ohos:padding="8vp"
+        ohos:left_padding="10vp"
+        ohos:text_size="20vp"
+        ohos:text_color="#ffffff"
+        ohos:right_margin="3vp"
+        ohos:background_element="$graphic:capsule_button_element"
+        ohos:left_margin="3vp">
+    </Button>
+</DirectionalLayout>

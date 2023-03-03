@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical"
+    ohos:alignment="center"
+    ohos:background_element="$graphic:background_common"
+    ohos:padding="40vp">
+
+
+    <Image
+        ohos:height="match_content"
+        ohos:width="200vp"
+        ohos:bottom_padding="20vp"
+        ohos:scale_mode="zoom_center"
+        ohos:image_src="$media:icon">
+    </Image>
+    <TextField
+        ohos:id="$+id:login_name_textfield"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:hint="登录账号"
+        ohos:text_size="15fp"
+        ohos:text_color="#777777"
+        ohos:text_alignment="vertical_center"
+        ohos:margin="5vp"
+        ohos:padding="10vp"
+        ohos:background_element="$graphic:background_textfield">
+    </TextField>
+
+    <TextField
+        ohos:id="$+id:login_pwd_textfield"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:hint="登录密码"
+        ohos:text_size="15fp"
+        ohos:text_input_type="pattern_password"
+        ohos:text_color="#777777"
+        ohos:text_alignment="vertical_center"
+        ohos:margin="5vp"
+        ohos:padding="10vp"
+        ohos:background_element="$graphic:background_textfield">
+    </TextField>
+
+    <!--设置登录按钮，在信息比对成功情况下可跳转至主页面中-->
+    <Button
+        ohos:id="$+id:login_btn"
+        ohos:height="match_content"
+        ohos:width="150vp"
+        ohos:text="登  录"
+        ohos:text_color="#ffffff"
+        ohos:text_size="13fp"
+        ohos:padding="10vp"
+        ohos:background_element="$graphic:capsule_button_element"
+        ohos:top_margin="15vp">
+    </Button>
+
+    <Button
+        ohos:id="$+id:enroll_btn"
+        ohos:height="match_content"
+        ohos:width="150vp"
+        ohos:text="注  册"
+        ohos:text_color="#ffffff"
+        ohos:text_size="13fp"
+        ohos:padding="10vp"
+        ohos:background_element="$graphic:capsule_button_element"
+        ohos:top_margin="15vp">
+    </Button>
+
+</DirectionalLayout>
